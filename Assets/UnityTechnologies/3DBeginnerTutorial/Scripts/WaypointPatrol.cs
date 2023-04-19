@@ -8,6 +8,9 @@ public class WaypointPatrol : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public Transform[] waypoints;
     int m_CurrentWaypointIndex;
+
+    public ParticleSystem destroyVFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +25,11 @@ public class WaypointPatrol : MonoBehaviour
             m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
             navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
         }
+    }
+
+    public void AttemptDestroy()
+    {
+        destroyVFX.transform.SetParent(transform.parent.gameObject.transform, true);
+        destroyVFX.Play();
     }
 }
