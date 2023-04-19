@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7644603999917088419}
   - component: {fileID: 7644603999907246403}
   - component: {fileID: 4014593975325680932}
+  - component: {fileID: 7598296719025048246}
   m_Layer: 0
   m_Name: Gargoyle
-  m_TagString: Untagged
+  m_TagString: Gargoyle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +71,24 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &7598296719025048246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644603999916720771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af010a83dae8af46b7ab799d80d9596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObj: {fileID: 4299903584161229047}
+  lightCone: {fileID: 2100000, guid: 98a5d7f03b88cef44932b3206c7bd8db, type: 2}
+  startColor: {r: 0.6051179, g: 1, b: 0, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  minDistance: 2
+  maxDistance: 3.5
 --- !u!1 &7644603999916720903
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,5 +235,10 @@ PrefabInstance:
 --- !u!4 &4299903584161229046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 803620009929642534, guid: f20ad5a5ee5ad8043b6b11df67f7197f, type: 3}
+  m_PrefabInstance: {fileID: 3497990291424246480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4299903584161229047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 803620009929642535, guid: f20ad5a5ee5ad8043b6b11df67f7197f, type: 3}
   m_PrefabInstance: {fileID: 3497990291424246480}
   m_PrefabAsset: {fileID: 0}
